@@ -1,7 +1,7 @@
 # SpaceXLaunchApp
 
 This application helps users to browse all launches SpaceX programs. This is server-side rendering application. 
-The initial launch programs landing page is server side rendered.
+The initial launch programs landing page is server side rendered. This application is deployed on netlify.
 
 ## Live Application Link
 
@@ -28,6 +28,7 @@ The initial launch programs landing page is server side rendered.
 2. Angular universal for server-side rendering.
 3. Bootstrap v4.6.0 for styling and responsiveness.
 4. RxJS v6.6.0 for using rxjs operators.
+5. netlify to deploy angular application.
 
 
 ## Code scaffolding
