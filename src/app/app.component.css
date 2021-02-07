@@ -5,7 +5,7 @@ header {
 section {
     padding: 0;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 699px){
     section {
         padding: 5px;
     }
