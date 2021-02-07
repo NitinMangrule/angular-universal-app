@@ -7,7 +7,7 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class LaunchDataService {
-  baseURL: string = 'https://api.spaceXdata.com/v3/launches?limit=100';
+  baseURL = 'https://api.spaceXdata.com/v3/launches?limit=100';
   constructor(private http: HttpClient) { }
 
   getAllLaunchDetails(): Observable<any> {
@@ -40,7 +40,7 @@ export class LaunchDataService {
     );
   }
 
-  handleError(error) {
+  handleError(error: any) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
       errorMessage = `Error: ${error.error.message}`;
