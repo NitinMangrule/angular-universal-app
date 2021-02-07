@@ -1,14 +1,23 @@
 # SpaceXLaunchApp
 
-This project was generated with [Angular CLI] version 11.1.2.
+This application helps users to browse all launches SpaceX programs. This is server-side rendering application. 
+The initial launch programs landing page is server side rendered.
 
 ## Live Application Link
 
 [SpaceX Launch App](https://amazing-mahavira-4eb744.netlify.app/)
 
-## Development server
 
-Run `npm run dev:ssr` for a dev server. Navigate to http://localhost:4200/
+## Application screenshots
+
+1. Desktop View:
+
+
+2. Tablet View: 
+
+
+3. Mobile View:
+
 
 ## Technology Stack
 
@@ -16,6 +25,7 @@ Run `npm run dev:ssr` for a dev server. Navigate to http://localhost:4200/
 2. Angular universal for server-side rendering.
 3. Bootstrap v4.6.0 for styling and responsiveness.
 4. RxJS v6.6.0 for using rxjs operators.
+
 
 ## Code scaffolding
 Steps:
@@ -31,19 +41,14 @@ Steps:
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 To publish build run `npm run prerender` that will create artifacts in dist folder under dist/spaceX-Launch-App/browser.
 
+## Development server
+
+Run `npm run dev:ssr` for a dev server. Navigate to http://localhost:4200/
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Application screenshots
-
-1. Desktop View:
-
-
-2. Tablet View: 
-
-
-3. Mobile View:
 
 ## Lighthouse Report
 
