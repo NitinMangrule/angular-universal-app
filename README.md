@@ -4,7 +4,7 @@ This project was generated with [Angular CLI] version 11.1.2.
 
 ## Development server
 
-Run npm run dev:ssr for a dev server. Navigate to http://localhost:4200/
+Run `npm run dev:ssr` for a dev server. Navigate to http://localhost:4200/
 
 ## Code scaffolding
 
