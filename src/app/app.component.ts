@@ -10,8 +10,8 @@ export class AppComponent implements OnInit {
   title = 'spaceX-Launch-App';
   launchDetails: Array<any> = [];
   tempLaunchData: Array<any> = [];
-  noData: boolean = false;
-  isLoading: boolean = false;
+  noData = false;
+  isLoading = false;
   constructor(private launchService: LaunchDataService) { }
 
   ngOnInit(): void {
