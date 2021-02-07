@@ -52,6 +52,7 @@ Steps:
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
 To publish build run `npm run prerender` that will create artifacts in dist folder under dist/spaceX-Launch-App/browser.
 
 ## Development server
