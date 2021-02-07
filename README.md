@@ -11,16 +11,24 @@ The initial launch programs landing page is server side rendered. This applicati
 ## Application screenshots
 
 1. Desktop View:
+![Desktop View](./images/desktop-view.png)
 
+2. Tablet View:
 
-2. Tablet View: 
+![Tablet View](./images/tablet-filter-view.png)
+
+![Tablet View](./images/tablet-card-view.png)
 
 
 3. Mobile View:
 
+![Mobile View](./images/mobile-filter-view.png)
 
-## Lighthouse Report
+![Mobile View](./images/mobile-card-view.png)
 
+## Lighthouse Report:
+
+![LightHouse Report](./images/lighthouse-report.png)
 
 ## Technology Stack
 
