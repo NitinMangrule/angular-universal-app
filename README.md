@@ -1,4 +1,4 @@
-# SpaceXLaunchApp
+# SpaceX Launch App
 
 This application helps users to browse all launches SpaceX programs. This is server-side rendering application. 
 The initial launch programs landing page is server side rendered. This application is deployed on netlify.
