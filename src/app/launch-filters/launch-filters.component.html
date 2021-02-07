@@ -1,0 +1,32 @@
+<div class="filter-section">
+    <div class="card">
+        <div class="card-body">
+            <div class="filter-header">
+                <h4>Filters</h4>
+                <a (click)="resetFilters()" *ngIf="showFilter">Reset filters</a>
+            </div>
+            <div class="filter-sub-header">
+                <h5>Launch Year</h5>
+                <ul class="filter-btn">
+                    <li *ngFor="let year of launchYears; let i = index;" (click)="filterByYear(i, year)"
+                        [ngClass]="selectedYear === i ? 'active': '' ">{{year}}</li>
+                </ul>
+            </div>
+
+            <div class="filter-sub-header">
+                <h5>Successful Launch</h5>
+                <ul class="filter-btn">
+                    <li *ngFor="let outcome of missionOutcome; let i = index;" (click)="filterByLaunchType(i, outcome)"
+                        [ngClass]="selectedLaunchOutcome === i ? 'active': '' ">{{outcome}}</li>
+                </ul>
+            </div>
+            <div class="filter-sub-header">
+                <h5>Successful Landing</h5>
+                <ul class="filter-btn">
+                    <li *ngFor="let outcome of missionOutcome; let i = index;" (click)="filterByLandingType(i, outcome)"
+                        [ngClass]="selectedLandingOutcome === i ? 'active': '' ">{{outcome}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

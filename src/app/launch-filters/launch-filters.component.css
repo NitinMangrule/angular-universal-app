@@ -1,0 +1,91 @@
+.filter-section h5 {
+    text-align: center;
+    margin: 25px auto 10px;
+    border-bottom: 2px solid#ddd;
+    padding-bottom: 5px;
+}
+
+.card-body {
+    position: relative;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-header a {
+    cursor: pointer;
+    color: #6cdf23;
+    padding-top: 5px;
+}
+.filter-header a:hover {
+    text-decoration: none;
+}
+.filter-sub-header {
+    position: relative;
+}
+.filter-btn{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: outside none;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.filter-btn li{
+    display: inline-block;
+    width: 36%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    flex-basis: 35%;
+    background: #b9ef96;
+    color: #000;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+
+.filter-btn li:hover {
+    background-color: #6cdf23;
+
+}
+.filter-btn li.active {
+    background-color: #6cdf23;
+}
+
+@media screen and (max-width: 699px){
+    .filter-section{
+        max-width: 300px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .filter-btn{
+        flex-direction: column;
+    }
+    .filter-btn li{
+        width: 100%;
+    }
+    .filter-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1024px){
+    .filter-btn{
+        flex-direction: row;
+    }
+    .filter-btn li{
+        width: 100%;
+    }
+}

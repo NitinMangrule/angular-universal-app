@@ -1,0 +1,5 @@
+<div *ngIf="data" class="main-card">
+    <div class="item" *ngFor="let item of data">
+        <app-launch-detail-card [launchData]="item"></app-launch-detail-card>
+    </div>
+</div>

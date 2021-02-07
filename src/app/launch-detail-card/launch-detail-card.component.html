@@ -1,0 +1,37 @@
+<div class="launch-details" *ngIf="launchData">
+    <div class="card">
+        <div class="card-body">
+            <figure>
+                <img src="{{launchData.links.mission_patch_small}}" alt="{{launchData?.rocket.rocket_name}}">
+            </figure>
+            <h5><strong>{{launchData?.mission_name}} #{{launchData?.flight_number}}</strong></h5>
+            <ul>
+                <li>
+                    <h6>
+                        <strong>Mission Ids:</strong>
+                        <ul class="mission-list">
+                            <li *ngFor="let mission of launchData.mission_id">
+                                {{mission}}
+                            </li>
+                        </ul>
+                    </h6>
+                </li>
+                <li>
+                    <h6 class="wrap">
+                        <strong>Launch Year:</strong> {{launchData?.launch_year}}
+                    </h6>
+                </li>
+                <li>
+                    <h6>
+                        <strong>Successful Launch:</strong> {{launchData?.launch_success}}
+                    </h6>
+                </li>
+                <li>
+                    <h6>
+                        <strong>Successful Landing:</strong> {{launchData?.launch_landing}}
+                    </h6>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xs-12">
+      <h1>SpaceX Launch Programs</h1>
+    </header>
+    <aside class="col-12 col-sm-12 col-md-3 col-lg-3 col-xs-3">
+      <app-launch-filters (getFilterData)="filteredData($event)" (resetFilter)="resetFilters()"></app-launch-filters>
+    </aside>
+    <section class="col-12 col-sm-12 col-md-9 col-lg-9 col-xs-9">
+      <div *ngIf="launchDetails && launchDetails.length">
+        <app-launch-details-container [data]="launchDetails"></app-launch-details-container>
+      </div>
+      <div *ngIf="noData" class="no-data">
+        <p>No Data Found!</p>
+      </div>
+      <div class="loader" *ngIf="isLoading"></div>
+    </section>
+  </div>
+  <footer>
+    <strong>Developed by:</strong> Nitin Mangrule
+  </footer>
+</div>

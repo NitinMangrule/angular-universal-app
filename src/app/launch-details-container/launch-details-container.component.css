@@ -1,0 +1,22 @@
+.main-card {
+    padding: 0 10px;
+}
+@media screen and (max-width: 767px){
+    .main-card:first-child {
+        padding: 10px 10px 0;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1023px){
+    .main-card{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 1024px){
+    .main-card{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+}

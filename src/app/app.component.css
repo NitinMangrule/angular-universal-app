@@ -1,0 +1,50 @@
+header {
+    padding: 20px 20px;
+    text-align: left;
+}
+section {
+    padding: 0;
+}
+@media screen and (max-width: 700px){
+    section {
+        padding: 5px;
+    }
+}
+footer {
+    text-align: center;
+    padding: 10px 15px;
+}
+.no-data{
+    padding: 25px;
+    text-align: center;
+}
+.loader{
+    border: 10px solid #bbb;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-top: 10px solid black;
+    animation: spin 1s linear infinite;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: 100px auto;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} 
+@media screen and (max-width: 699px){
+    section {
+        padding: 5px;
+    }
+    header {
+        
+        text-align: center;
+    }
+}
