@@ -13,8 +13,8 @@ export class LaunchFiltersComponent {
   selectedLaunchOutcome: number;
   selectedLandingOutcome: number;
   filterInput:any = {};
-  @Output('getFilterData') getFilterData = new EventEmitter<any>();
-  @Output('resetFilter') resetFilter = new EventEmitter<any>(); 
+  @Output() getFilterData = new EventEmitter<any>();
+  @Output() resetFilter = new EventEmitter<any>(); 
   constructor() { }
 
   filterByYear(index: number, year: string){
