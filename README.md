@@ -11,6 +11,7 @@ The initial launch programs landing page is server side rendered. This applicati
 ## Application screenshots
 
 1. Desktop View:
+
 ![Desktop View](./images/desktop-view.png)
 
 2. Tablet View:
