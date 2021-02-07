@@ -19,6 +19,9 @@ The initial launch programs landing page is server side rendered.
 3. Mobile View:
 
 
+## Lighthouse Report
+
+
 ## Technology Stack
 
 1. Angular v11.1.2
@@ -48,10 +51,6 @@ Run `npm run dev:ssr` for a dev server. Navigate to http://localhost:4200/
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-
-## Lighthouse Report
-
 
 ## Lint Report
 Run `ng lint` to generate linting report.
