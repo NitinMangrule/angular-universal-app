@@ -2,26 +2,54 @@
 
 This project was generated with [Angular CLI] version 11.1.2.
 
+## Live Application Link
+
+[SpaceX Launch App](https://amazing-mahavira-4eb744.netlify.app/)
+
 ## Development server
 
 Run `npm run dev:ssr` for a dev server. Navigate to http://localhost:4200/
 
-## Code scaffolding
+## Technology Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Angular v11.1.2
+2. Angular universal for server-side rendering.
+3. Bootstrap v4.6.0 for styling and responsiveness.
+4. RxJS v6.6.0 for using rxjs operators.
+
+## Code scaffolding
+Steps:
+
+1. To create new angular application run `ng new angular-app`.
+2. To add angular universal package in project run `ng add @nguniversal/express-engine`.
+3. To add new component run `ng g c component-name`.
+4. To add new service run `ng g s service-name`.
+5. To add bootstrap package run `npm install bootstrap --save`.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+To publish build run `npm run prerender` that will create artifacts in dist folder under dist/spaceX-Launch-App/browser.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Application screenshots
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Desktop View:
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Tablet View: 
+
+
+3. Mobile View:
+
+## Lighthouse Report
+
+
+## Lint Report
+Run `ng lint` to generate linting report.
+
+
+
