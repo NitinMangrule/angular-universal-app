@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./launch-details-container.component.css']
 })
 export class LaunchDetailsContainerComponent {
-  @Input('data') data: any;
+  @Input() data: any;
   constructor() { }
 }
