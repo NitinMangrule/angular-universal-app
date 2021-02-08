@@ -15,23 +15,17 @@ export class LaunchDataService {
   }
 
   getLaunchDetailsByFilter(filterData: any): Observable<any> {
-    let updatedURL = '';
-    switch (filterData.filterBy) {
-      case 'filterByYear':
-        updatedURL = this.baseURL + `&launch_year=${filterData.year}`;
-        break;
-      case 'filterByLaunch':
-        updatedURL = this.baseURL + `&launch_success=${filterData.isLaunched}`;
-        break;
-      case 'filterByLanding':
-        updatedURL = this.baseURL + `&launch_success=${filterData.isLaunched}&land_success=${filterData.isLanded}`;
-        break;
-      case 'filterByLaunchYear':
-        updatedURL = this.baseURL + `&launch_year=${filterData.year}&launch_success=${filterData.isLaunched}`;
-        break;
-      default:
-        updatedURL = this.baseURL + `&launch_year=${filterData.year}&launch_success=${filterData.isLaunched}&land_success=${filterData.isLanded}`;
-        break;
+    let updatedURL = this.baseURL;
+    if (filterData) {
+      if (filterData.hasOwnProperty('year')) {
+        updatedURL = updatedURL + `&launch_year=${filterData.year}`;
+      }
+      if (filterData.hasOwnProperty('isLaunched')) {
+        updatedURL = updatedURL + `&launch_success=${filterData.isLaunched}`;
+      }
+      if (filterData.hasOwnProperty('isLanded')) {
+        updatedURL = updatedURL + `&land_success=${filterData.isLanded}`;
+      }
     }
 
     return this.http.get(updatedURL).pipe(
@@ -40,7 +34,7 @@ export class LaunchDataService {
     );
   }
 
-  handleError(error: any) {
+  handleError(error: any): any {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
       errorMessage = `Error: ${error.error.message}`;
