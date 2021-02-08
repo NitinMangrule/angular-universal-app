@@ -19,7 +19,6 @@ export class LaunchFiltersComponent {
 
   filterByYear(index: number, year: string): void {
     this.selectedYear = index;
-    this.filterInput.filterBy = 'filterByYear';
     this.filterInput.year = year;
     this.getFilterData.emit(this.filterInput);
     this.showFilter = true;
@@ -27,7 +26,6 @@ export class LaunchFiltersComponent {
 
   filterByLaunchType(index: number, type: boolean): void {
     this.selectedLaunchOutcome = index;
-    this.filterInput.filterBy = this.filterInput.year ? 'filterByLaunchYear' : 'filterByLaunch';
     this.filterInput.isLaunched = type;
     this.getFilterData.emit(this.filterInput);
     this.showFilter = true;
@@ -35,9 +33,6 @@ export class LaunchFiltersComponent {
 
   filterByLandingType(index: number, type: boolean): void {
     this.selectedLandingOutcome = index;
-    this.filterInput.filterBy = this.filterInput.year ? '' : 'filterByLanding';
-    this.filterInput.isLaunched = true;
-    this.selectedLaunchOutcome = 0;
     this.filterInput.isLanded = type;
     this.getFilterData.emit(this.filterInput);
     this.showFilter = true;
